@@ -4,7 +4,7 @@ We have a doll supply chain hierarchy:
 
 We have two types of dolls
 -------------------------------------
-Russian doll -- Can have either Russian dolls or solid dolls inside it
+Russian doll -- Can have either a Russian doll or a solid doll inside it
 Solid doll   -- It cannot have anything inside it.
 
 We have three types of relationships
@@ -25,9 +25,9 @@ G     Customer    Customer    Russian doll
 H     Customer    Customer    Solid doll
 
 
-Each item has a type.  
-Each item has a parent item, which also has a type.
-At some point, the parent item is null (we've hit the outermost item).
+Each doll has a type.  
+Each doll has a containing doll, which also has a type.
+At some point, the containing doll is null (we've hit the outermost item).
 The supplier only gives out outermost dolls and solid dolls.
 
 Our tree looks like:
@@ -48,7 +48,7 @@ Write code that can do the following:
 Go clone this:
 git clone git@github.com:brweber2/WhatWouldYouDoTalk.git
 
-Create a branch with your NIC username
+Create a branch with your username
 >> git checkout -b <username>
 Add your code
 >> git add .
@@ -56,6 +56,7 @@ Commit your work
 >> git commit -m "Rock on"
 Push your branch
 >> git push origin <username>
+
 Do not push to master!!!
 
 
