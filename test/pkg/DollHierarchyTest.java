@@ -1,7 +1,3 @@
-/*
- * $Id$
- * Copyright (C) 2011 ARIN
- */
 package pkg;
 
 import org.junit.Assert;
