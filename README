@@ -33,11 +33,11 @@ The supplier only gives out outermost dolls and solid dolls.
 Our tree looks like:
 
         A            B        C      D
-     |----|        |---|
-     E    F        G   H
-   |--|          |--|
-   G  H          G  H
- |--|           ...
+     |----|                 |---|
+     E    F                 G   H
+   |--|                   |--|
+   G  H                   G  H
+ |--|                    ...
  G  H
 ...
 
@@ -60,4 +60,9 @@ Push your branch
 Do not push to master!!!
 
 
+Let's look at a few solutions.
+
+My first solution
+Yours
+My second solution
 
