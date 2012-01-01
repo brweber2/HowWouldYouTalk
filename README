@@ -1,42 +1,43 @@
-State the problem:
+First, let's state the problem.
 
 We have a doll supply chain hierarchy:
 
 We have two types of dolls
 -------------------------------------
 Russian doll -- Can have either Russian dolls or solid dolls inside it
-Solid doll  -- It cannot have anything inside it.
+Solid doll   -- It cannot have anything inside it.
 
 We have three types of relationships
 -------------------------------------
-Supplier -- manufactures the actual dolls
-Us  -- the middle man
+Supplier  -- manufactures the actual dolls
+Us        -- the middle man
 Customers -- could be a reseller or a consumer
 
-Type  From    To      Which
+Type  From        To          Which
 -------------------------------------
-A   Supplier  Us      Russian doll
-B   Supplier  Us      Solid doll
-C   Supplier  Customer  Russian doll
-D   Supplier  Customer  Solid doll
-E   Us      Customer  Russian doll
-F   Us      Customer  Solid doll
-G   Customer  Customer  Russian doll
-H   Customer  Customer  Solid doll
+A     Supplier    Us          Russian doll
+B     Supplier    Us          Solid doll
+C     Supplier    Customer    Russian doll
+D     Supplier    Customer    Solid doll
+E     Us          Customer    Russian doll
+F     Us          Customer    Solid doll
+G     Customer    Customer    Russian doll
+H     Customer    Customer    Solid doll
 
 
-So each item has a type.  It also has a parent item, which also has a type.
+Each item has a type.  
+Each item has a parent item, which also has a type.
 At some point, the parent item is null (we've hit the outermost item).
-The supplier only gives out outermost dolls.
+The supplier only gives out outermost dolls and solid dolls.
 
 Our tree looks like:
 
-        A         B        C      D
+        A            B        C      D
      |----|        |---|
      E    F        G   H
    |--|          |--|
    G  H          G  H
- |--|         ...
+ |--|           ...
  G  H
 ...
 
