@@ -1,68 +1,18 @@
-First, let's state the problem.
+The second solution.
 
-We have a doll supply chain hierarchy:
+This one is written in Prolog.
+I used SWI Prolog (http://www.swi-prolog.org).
 
-We have two types of dolls
--------------------------------------
-Russian doll -- Can have either a Russian doll or a solid doll inside it
-Solid doll   -- It cannot have anything inside it.
+Advantages:
 
-We have three types of relationships
--------------------------------------
-Supplier  -- manufactures the actual dolls
-Us        -- the middle man
-Customers -- could be a reseller or a consumer
+* Far fewer lines of code
+* The hierarchy is only specified once
+* Highly readable
 
-Type  From        To          Which
--------------------------------------
-A     Supplier    Us          Russian doll
-B     Supplier    Us          Solid doll
-C     Supplier    Customer    Russian doll
-D     Supplier    Customer    Solid doll
-E     Us          Customer    Russian doll
-F     Us          Customer    Solid doll
-G     Customer    Customer    Russian doll
-H     Customer    Customer    Solid doll
+Disadvantages:
 
+* Requires another platform.
 
-Each doll has a type.  
-Each doll has a containing doll, which also has a type.
-At some point, the containing doll is null (we've hit the outermost item).
-The supplier only gives out outermost dolls and solid dolls.
+Neutral:
 
-Our tree looks like:
-
-        A            B         C      D
-     |----|                 |----|
-     E    F                 G    H
-   |--|                   |--|
-   G  H                   G  H
- |--|                    ...
- G  H
-...
-
-Write code that can do the following:
-1) Given a type, list the possible parent types
-2) Given a type, list the possible child types
-
-Go clone this:
-git clone git@github.com:brweber2/WhatWouldYouDoTalk.git
-
-Create a branch with your username
->> git checkout -b <username>
-Add your code
->> git add .
-Commit your work
->> git commit -m "Rock on"
-Push your branch
->> git push origin <username>
-
-Do not push to master!!!
-
-
-Let's look at a few solutions.
-
-My first solution
-Yours
-My second solution
-
+* I am unsure of the performance difference from my first solution.
