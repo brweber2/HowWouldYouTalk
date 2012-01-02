@@ -45,7 +45,7 @@ Write code that can do the following:
 1) Given a type, list the possible parent types
 2) Given a type, list the possible child types
 
-Go clone this:
+Go clone this (or feel free to fork it if you have a github account):
 >> git clone git@github.com:brweber2/HowWouldYouTalk.git
 
 Create a branch with your username
