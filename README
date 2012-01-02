@@ -1,68 +1,21 @@
-First, let's state the problem.
+Questions:
 
-We have a doll supply chain hierarchy:
-
-We have two types of dolls
--------------------------------------
-Russian doll -- Can have either a Russian doll or a solid doll inside it
-Solid doll   -- It cannot have anything inside it.
-
-We have three types of relationships
--------------------------------------
-Supplier  -- manufactures the actual dolls
-Us        -- the middle man
-Customers -- could be a reseller or a consumer
-
-Type  From        To          Which
--------------------------------------
-A     Supplier    Us          Russian doll
-B     Supplier    Us          Solid doll
-C     Supplier    Customer    Russian doll
-D     Supplier    Customer    Solid doll
-E     Us          Customer    Russian doll
-F     Us          Customer    Solid doll
-G     Customer    Customer    Russian doll
-H     Customer    Customer    Solid doll
-
-
-Each doll has a type.  
-Each doll has a containing doll, which also has a type.
-At some point, the containing doll is null (we've hit the outermost item).
-The supplier only gives out outermost dolls and solid dolls.
-
-Our tree looks like:
-
-        A            B         C      D
-     |----|                 |----|
-     E    F                 G    H
-   |--|                   |--|
-   G  H                   G  H
- |--|                    ...
- G  H
-...
-
-Write code that can do the following:
-1) Given a type, list the possible parent types
-2) Given a type, list the possible child types
-
-Go clone this:
->> git clone git@github.com:brweber2/HowWouldYouTalk.git
-
-Create a branch with your username
->> git checkout -b <username>
-Add your code
->> git add .
-Commit your work
->> git commit -m "Rock on"
-Push your branch
->> git push origin <username>
-
-Do not push to master!!!
-
-
-Let's look at a few solutions.
-
-My first solution
-Yours
-My second solution
-
+* Did you finish on time?
+* What language did you use?
+* Did you use any libraries or frameworks?
+* Did you struggle with any of the technology? (git?)
+* Would you have done anything differently if you had more time?
+* Did you learn anything from a partner?
+* Did you enjoy the exercise?
+* Are you happy with our resulting code?
+* Did you write a test?
+* Did you write a test first?
+* Is your solution fast?
+* Is your solution readable?
+* Is your solution maintainable?
+* What issues does your solution have?
+* Did you consider hard coding the responses?
+* Did you consider using a state machine?
+* Did you consider using a database?
+* Did you consider using a logic programming language?
+* Did you consider using LINQ or something similar?
