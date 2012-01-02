@@ -13,3 +13,11 @@ doll_hierarchy(h,nil).
 
 parent(X,Y) :- doll_hierarchy(X,Y).
 child(X,Y) :- doll_hierarchy(Y,X).
+
+% root node iff it shows up on the left, but never on the right
+% this can be used to answer about a specific node or to enumerate them all
+root_nodes(X) :- doll_hierarchy(X,_), \+ doll_hierarchy(_,X).
+
+% leaf nodes cannot have child nodes
+% this can be used to answer about a specific node or to enumerate them all
+leaf_nodes(X) :- doll_hierarchy(X,nil).
