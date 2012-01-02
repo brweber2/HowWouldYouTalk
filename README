@@ -24,3 +24,4 @@ Questions:
 * What if you knew that the hierarchy could only be ten levels deep?  Would you change anything?
 * What if you knew the program had to have a very small memory footprint? Would you change anything?
 * What if you knew the program had to run very, very fast. Would you change anything?
+* If you had to change the hierarchy, would it be easy given your solution?
