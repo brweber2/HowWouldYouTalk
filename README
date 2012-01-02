@@ -3,7 +3,6 @@ Questions:
 * Did you finish on time?
 * What language(s) did you use?
 * How many lines of code?
-* How much incidental complexity did you incur?
 * Did you have to install anything?
 * Did you have to learn how to use anything?
 * Did you have to create an account on github?
@@ -18,6 +17,7 @@ Questions:
 * Is your solution fast?
 * Is your solution readable?
 * Is your solution maintainable?
+* Can you solution be used concurrently?
 * What issues does your solution have?
 * What advantages does your solution have?
 * Did you consider hard coding the responses?
@@ -31,3 +31,4 @@ Questions:
 * What if you knew the program had to have a very small memory footprint? Would you change anything?
 * What if you knew the program had to run very, very fast. Would you change anything?
 * If you had to change the hierarchy, would it be easy given your solution?
+* How much incidental complexity did you incur?
