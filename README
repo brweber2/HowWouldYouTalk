@@ -2,7 +2,7 @@ First, let's state the problem.
 
 We have a doll supply chain hierarchy:
 
-
+COOL, RUSSIAN DOLLS!
                                                                                                                         
           . ...........                                                                                                 
       . .,?+I?7O$IZOI?..                                                                                                
@@ -90,29 +90,53 @@ Write code that can do the following:
 1) Given a type, list the possible parent types
 2) Given a type, list the possible child types
 
-Go clone this (or feel free to fork it if you have a github account):
->> git clone git@github.com:brweber2/HowWouldYouTalk.git
+-----------------------------------------------------------------
 
-Create a branch with your username
->> git checkout -b <username>
-Add your code
->> git add .
-Commit your work
->> git commit -m "Rock on"
-Push your branch
->> git push origin <username>
+The Rules:
 
-Warning: Do not push to master!!!
+* Find 1 to 2 partners.
+* None of your partners can be on your current project.
+* You have 15 minutes to complete this exercise.
+
 Protip:  You should probably use technology you are familiar with given the time constraints.
 Protip:  Ask questions if anything is unclear.
 
 -----------------------------------------------------------------
 
+How to get started:
+
+Go clone this (or feel free to fork it if you have a github account):
+>> git clone git@github.com:brweber2/HowWouldYouTalk.git
+
+Create a branch with your username
+>> git checkout -b <username>
+Do some work...
+Add your code
+>> git add .
+Commit your work
+>> git commit -m "Rock on"
+Push your branch (or create a pull request)
+>> git push origin <username>
+
+Warning: Do not push to master!!!
+
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+
+WHEN TIME EXPIRES...
+
+-----------------------------------------------------------------
+
 Let's ponder a few questions.
+
+-----------------------------------------------------------------
 
 Let's look at a few solutions.
 
   My first solution
-  Yours
+  Yours?
   My second solution
 
