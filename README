@@ -3,35 +3,49 @@ First, let's state the problem.
 We have a doll supply chain hierarchy:
 
 
-                                                                                
-    ..=+777I?I=.                                                                
-    7I??===II$7ZI                                                               
-   $II=$===~=+=OO?                                                              
-   Z+?M~?~=NN$+ZOZ                                                              
-   O+==~~~.?===88Z.                                                             
-   ZO=++=I.?+=+88O                                                              
-   OO8+=~~~~~O888O,        ...,:....                                            
-   OO8DZOO?8OO8888I       .$I?OI??ZI.                                           
-  .OOD8ZZ8$8O8O+88$      ?7?N~~~7?7Z7.                                          
-  ?+O88Z$OOZ8DNO7ZO.     ZI~Z~~~.?=O$.                                          
-  ?8O88$7~,O8O8O$8OO     Z+==~::~==OZ,                                          
-  Z88O,.?$7I++8O=$$Z.   .OO++~$.++$OZ+.        ....                             
-  77+,Z$IZ.OZ++$O88Z7   .OOO~::,~OOOO7.      77I?=II?                           
-  OOZ~Z7+,:ZO7=OOO88Z   .OOOO$7DZ8OO8Z.     :I=Z.~77=.                          
- .8887$OOO$Z7~~OO8887.  ,OOOO$I$OOOOOOI.    ID~N~~~+=:                          
- :O8887?+7?=~OOOOO88?.  +:OO.~~,.ZOO$OZ     ZO==,+7=Z+      .$?I?=              
-  O88888OOOOOO88O$OI?   =~O~?.I.I~,IZ$Z     ZOOOI=DOO7     .O?I=+I..            
-  ZOZO8888OOO888O88OO. .ZO?=ZZ$ZI,.OOO7,   .$O8OI8DO8Z.    .8?M++?I.   .~,      
-  O:Z8O8OO8OOOO8888ZO. .OOO77?+=++,OOO8+   +OOOO=?+=OZI    788++??O.  .I+??.    
-  ZIZ888OZOOOOO7?7$78  .OOOOO,,..IOOOOI+   7OOO+$I,OZ+O.  .888$=888.  .=+$I.    
-  ?8=OOOZ~77ZOZIOI88Z   7OOOOOZOOO$Z+~8=   ZZO$$OO$Z8Z8.  .D88?7788D. .8DD8.    
-  .ZOZ=~$O~+I?+O8888    .?:ZOO$ZOOZ+O8O.   O7OOO77~OO+8.  .DO88I?88N. $DD?8Z    
-   IO888888OO888888Z     8O+$7=,~?+,8NO.   $OO~+~+Z=:NN   .D88$:+Z8D  O?DO?Z    
-   .$O8888888O88OOO.    .:ZO==OOZ$OOOZ+    .$OO7OOO?88Z   .8Z88O88ZM. 8D8DDO~   
-    :Z88888888OOOO$      .7ZOOOOOOOOO$      7++I:~:O8O.    =8877IIO.   OZZ$O.   
-     ?OOOOOOOOOOOZ.       .ZOOOOOOOOZ..     :ZOOOOOOO.     .O8888O..   .8DD..   
-      .ZOOOOOOO .          ..OOOOO...          7OOO:.        ....               
-                                                                   
+                                                                                                                        
+          . ...........                                                                                                 
+      . .,?+I?7O$IZOI?..                                                                                                
+      .?77?IIO=+?I7?7$Z7=.                                                                                              
+     ,$IIIN=======?Z7I7OZI.                                                                                             
+    .$$?+==+========+=$OOOI                                                                                             
+    .ZI=8$:7~=~=ONM+=++INO$                                                                                             
+    .Z++=8N====~:NN====O8OZ..                                                                                           
+     O8+=++==~~..?====+88OZ=.                                                                                           
+    .O8=+?++=:~~=+?+==D88OOI.                                                                                           
+    .O8O?++==~~~~~===N8888O7.                                                                                           
+    :OO888==~~~:=~~N888888O$             .. .=+++: .                                                                    
+    =OO8888ZZZ8O88DOO88888OZ.            I7?+IO$I?Z7I:.                                                                 
+    ?OO88N8OO$OZ$OOOD88888OO.         .7OIO??::=I?$I$$7.                                                                
+    7OO8DO8$$ZDOOO88OD8+8I8O~         $O7?Z~::~~=?I?IZZI                                                                
+   .I+888DNZ$$OOOODMNO7Z7ODOZ.        Z8Z~==:~.~=~==$OZ7.                                                               
+   .I?88888$77O8ZO88O88I++88Z.        Z8=$NN:=:~NN=+=OO7.                                                               
+   ,?O88888$7,==,:OOO888O88DZZ        ZO===~~:.:~===~OO$~                                                               
+   7ZO888+,,+?$7?==:8O88$+I7+Z=      .ZO==++~I:7=++~OOO$=.             ... .                                            
+   7I?88==III~,,OOZI+~8,ZO88OI8      .O8O~~~~:,,:~=OOOOZI.          .~77??Z?$~..                                        
+   $$7I?,ZO$$$O$.OZI=:?OOO888Z$.     .OOOOOI:~:,+OOOOOOZ7         . $IIII?~$I?$?.                                       
+   ZOOZ7:$O$=.:,.ZOZ7+O8OO8888Z$     .8OOO8OZ7$8ZONOOOOOZ:        .7ZZ+~::~~==7Z.                                       
+   OO8OZ7$O$O7ZO.$$7I=IOOO8888Z8..   7+OO8OOZIZZOOOO8OO8ZI        .O+~+NZ~~~M7=$.                                       
+  ,O8888ZI$OOOOO$$7I::OOOO8888OO..   8~OOOOO$~.=8ND8OOO88$        .ON~~Z$~~~~==Z:                                       
+ .:O88888$I7ZOOZ+=++$OOOO8Z888OO..   8~OOZ7.,:::.ZOOOOOZ8$.       .OO====,~~=+?Z=          .+7???+..                    
+  ,OO8888888O:+~=~IOOO8O88O88$?D.. .~=Z=O.:~....+~:IO,=~~O7       .OOO:=:.?~~7OZ?        .IZ$II?Z???                    
+   ZO88888888OOOOOOOOO888888ZI+O.. .I++~Z=7I.Z$.7I=:,ZOZO?7.      7ZOOOD7.O88DOO$        .OI777++$+I .                  
+   $OOO788888O8OOOO8O88888888OOO.. .IZZI~++ZZ77Z$+,.OOOOOZ$.    . 7ZOO8O7,88OOOOZ~.      .OI+7M++N+$..      .,.         
+   7=7+Z88888O88OOOO888888888O78.. .I8OOO:+ZOZZZ?=~?OOZIIZ?=    .=ZZOO88I.::~7D8ZI       ,OD++~=+??O~.    .?IIII.       
+   $O:ZO8O88OOOOOOOOOOOOOO888$DD.. .?OOOOO.:+ZZ$=:,,OOOOO8?+    .?ZOOOOO..I$7+:7$Z+     .$8887=:++888.   .Z+???7+       
+   IZ?ZO8888OOOO8OOOOOO7?7$$7ID8   .:8OOOOOO.,:,., OOOOOOO8+    .7$ZZO8=I78,:OO7+7I..   .88888=.88888.   .Z=+?OI?.      
+    ZOIZO8OOOZ?$OOOOOOOI==+++D8I     OOOOOOOOZZOOOOOOOOO7=O?    .O=$7+~7OZ~OOZZO+8O..   =N8888I?88888D.   O8??7IZ.      
+   .788+$ZZZ$I,?I=ZZZZ7+O88888O.     :$OOOOOOZOOOOOZ?==::8Z:    .Z$ZOOOOOZZ~OOO8OOO..   ZDD?+I$$Z$Z$DN.   O8D88DO+      
+   .~ZOO$=~::ZO~+??I??+O88888OZ.     Z:::ZOOZ$7$$OOO7+~O88Z.     O7ZOOOOO$$+OOOO?8O..   OD?8O88??888ZN   .88D7?78Z.     
+    .$OO8888888OOI==?Z8888888O..     .NOIIZZZI+:?ZZ7?~$DND7.    .ZO$77Z$I=~7OO$+8M8     Z88888ZO8ZI8ZD.  .8D=Z$78$      
+     +ZO8888888888OOO8888888O$        ZOO+?II+:,:===:7O8DO+     .$OOOZ+$Z=$Z$ZZONNI     IN88887?+78888   .D?8DI$8Z+     
+     .7OO88888888888888888OO$.       .=ZOZI~:Z8OZII$OOOZO7      .:$ZOOZZOOOOZ?O888.     .DDO88OZ888OZN.  .DNODDDDOI     
+      :$OO8888888888O88OOOOZ7.        .7ZZOOOOOOOOOOOOOO$:       .I+I7I=+?II=?888$.     .$88$7Z8O$$$D,   .O8$888877     
+      .=$OO88O88888OOOOOOOOZ.         ..$ZOOOOOOOOOOOOOZ7.        :7I~?OOZ$ZO888Z.       .O8888OZO8OZ.    .O8DD8D8.     
+        ?ZOOOOOOOOOOOOOOOOZ7.          .IZZOOOOOOOOOOOZ$..         ?ZZOOOOOOOO8O.        ..8888888OZ..    ..8DDDD..     
+       . 7ZOOOOOOOOOOOOOO...            .7ZOOOOOOOOOOO...         . .ZOOOOOOOOO..         ..?O888O..        .... .      
+         .. ... .........                ..............              ..... .....            .....                       
+                                                                                                   
 
 We have two types of dolls
 -------------------------------------
