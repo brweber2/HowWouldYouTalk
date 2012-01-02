@@ -1,0 +1,40 @@
+--> swipl
+
+% a knowledge base consists of facts and rules
+% let's load our knowledge base
+?- [dolls].
+% dolls compiled 0.00 sec, 1,296 bytes
+true.
+
+% now we can query it!
+?- parent(e,g).
+true.
+
+?- parent(x,y).
+false.
+
+?- parent(g,e).
+false.
+
+?- child(e,g).
+false.
+
+?- child(g,e).
+true ;
+false.
+
+% if we use a variable we can get all the results that would make the query true!
+?- child(g,X).
+X = c ;
+X = e ;
+X = g.
+
+% in fact, we don't need parent and child at all!
+?- doll_hierarchy(g,X).
+X = g ;
+X = h.
+
+?- doll_hierarchy(X,g).
+X = c ;
+X = e ;
+X = g.
