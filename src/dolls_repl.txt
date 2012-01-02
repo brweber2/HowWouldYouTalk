@@ -7,21 +7,26 @@
 true.
 
 % now we can query it!
+% ask if e is a parent of g?
 ?- parent(e,g).
 true.
 
+% what about things we know nothing about?
 ?- parent(x,y).
 false.
 
+% and just to make sure, let's query for a false statement
 ?- parent(g,e).
 false.
 
+% g has two children, neither of which is e
 ?- child(e,g).
 false.
 
+% e has two children, one is g and one is not
 ?- child(g,e).
-true ;
-false.
+true ;   % g
+false.   % h
 
 % if we use a variable we can get all the results that would make the query true!
 ?- child(g,X).
@@ -29,11 +34,25 @@ X = c ;
 X = e ;
 X = g.
 
+% look at these two queries:
+% find all the children of g
+?- child(X,g).
+X = g ;
+X = h.
+
+% find all the parents of g using the child query!
+?- child(g,X).
+X = c ;
+X = e ;
+X = g.
+
 % in fact, we don't need parent and child at all!
+% find all the children of g
 ?- doll_hierarchy(g,X).
 X = g ;
 X = h.
 
+% find all the parents of g
 ?- doll_hierarchy(X,g).
 X = c ;
 X = e ;
