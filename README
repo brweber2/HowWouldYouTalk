@@ -21,3 +21,6 @@ Questions:
 * Did you consider using logic programming?
 * Did you consider using LINQ or something similar?
 * What tradeoffs would have been involved in each of these compared to your solution?
+* What if you knew that the hierarchy could only be ten levels deep?  Would you change anything?
+* What if you knew the program had to have a very small memory footprint? Would you change anything?
+* What if you knew the program had to run very, very fast. Would you change anything?
