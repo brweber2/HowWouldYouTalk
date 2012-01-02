@@ -1,9 +1,9 @@
 Questions:
 
 * Did you finish on time?
-* What language did you use?
+* What language(s) did you use?
 * Did you use any libraries or frameworks?
-* Did you struggle with any of the technology? (git?)
+* Did you struggle with any of the technology?
 * Would you have done anything differently if you had more time?
 * Did you learn anything from a partner?
 * Did you enjoy the exercise?
@@ -14,8 +14,10 @@ Questions:
 * Is your solution readable?
 * Is your solution maintainable?
 * What issues does your solution have?
+* What advantages does your solution have?
 * Did you consider hard coding the responses?
 * Did you consider using a state machine?
 * Did you consider using a database?
-* Did you consider using a logic programming language?
+* Did you consider using logic programming?
 * Did you consider using LINQ or something similar?
+* What tradeoffs would have been involved in each of these compared to your solution?
