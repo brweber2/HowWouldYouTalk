@@ -18,6 +18,7 @@ Questions:
 * Did you consider hard coding the responses?
 * Did you consider using a state machine?
 * Did you consider using a database?
+* Did you consider a rules engine?
 * Did you consider using logic programming?
 * Did you consider using LINQ or something similar?
 * What tradeoffs would have been involved in each of these compared to your solution?
