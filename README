@@ -1,68 +1,22 @@
-First, let's state the problem.
+This was my first solution.
 
-We have a doll supply chain hierarchy:
+I wrote it in Java.
+I wrote a test.
 
-We have two types of dolls
--------------------------------------
-Russian doll -- Can have either a Russian doll or a solid doll inside it
-Solid doll   -- It cannot have anything inside it.
+What are the advantages?
 
-We have three types of relationships
--------------------------------------
-Supplier  -- manufactures the actual dolls
-Us        -- the middle man
-Customers -- could be a reseller or a consumer
+* It is fast.
+* Reasonably easy to change.
+* Static type safety with the enum.
 
-Type  From        To          Which
--------------------------------------
-A     Supplier    Us          Russian doll
-B     Supplier    Us          Solid doll
-C     Supplier    Customer    Russian doll
-D     Supplier    Customer    Solid doll
-E     Us          Customer    Russian doll
-F     Us          Customer    Solid doll
-G     Customer    Customer    Russian doll
-H     Customer    Customer    Solid doll
+What are the disadvantages?
 
+* The relationships are duplicated, once for up the hierarchy and once for down the hierarchy.
+** This makes maintainence harder and the introduction of bugs more likely in the future.
+* The resulting data structures are mutable and could be changed by any callee.
+* Lack of an interface could make testing more challenging if parallel tests are run and the relationships change for specific tests.
 
-Each doll has a type.  
-Each doll has a containing doll, which also has a type.
-At some point, the containing doll is null (we've hit the outermost item).
-The supplier only gives out outermost dolls and solid dolls.
+What am I neutral on?
 
-Our tree looks like:
-
-        A            B         C      D
-     |----|                 |----|
-     E    F                 G    H
-   |--|                   |--|
-   G  H                   G  H
- |--|                    ...
- G  H
-...
-
-Write code that can do the following:
-1) Given a type, list the possible parent types
-2) Given a type, list the possible child types
-
-Go clone this:
-git clone git@github.com:brweber2/WhatWouldYouDoTalk.git
-
-Create a branch with your username
->> git checkout -b <username>
-Add your code
->> git add .
-Commit your work
->> git commit -m "Rock on"
-Push your branch
->> git push origin <username>
-
-Do not push to master!!!
-
-
-Let's look at a few solutions.
-
-My first solution
-Yours
-My second solution
-
+* How readable is it?
+* Could the hierarchy relationships easily be changed at runtime?
