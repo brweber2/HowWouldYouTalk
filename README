@@ -57,7 +57,9 @@ Commit your work
 Push your branch
 >> git push origin <username>
 
-Do not push to master!!!
+Warning: Do not push to master!!!
+Protip:  You should probably use technology you are familiar with given the time constraints.
+Protip:  Ask questions if anything is unclear.
 
 -----------------------------------------------------------------
 
