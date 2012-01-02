@@ -46,7 +46,7 @@ Write code that can do the following:
 2) Given a type, list the possible child types
 
 Go clone this:
-git clone git@github.com:brweber2/WhatWouldYouDoTalk.git
+>> git clone git@github.com:brweber2/HowWouldYouTalk.git
 
 Create a branch with your username
 >> git checkout -b <username>
