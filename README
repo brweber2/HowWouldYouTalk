@@ -1,0 +1,17 @@
+# third
+
+My third solution to this problem. This one uses clojure and core.logic.
+
+## Usage
+
+lein repl
+
+(list-children 'a)
+(list-parents 'g)
+(parent? 'a 'e)
+(child? 'e 'a)
+
+## License
+
+Copyright (C) 2012 brweber2 
+
